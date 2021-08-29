@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,19 +15,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Da0-04-mBz">
-                                <rect key="frame" x="20" y="842" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <action selector="info:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SSz-QI-fgQ"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-N6-Xys">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MATH" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="37" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="P0g-Fp-Y2T">
+                                        <rect key="frame" x="85" y="160" width="244" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Da0-04-mBz">
+                                        <rect key="frame" x="344" y="50" width="20" height="20"/>
+                                        <connections>
+                                            <action selector="info:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SSz-QI-fgQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Da0-04-mBz" firstAttribute="top" secondItem="Bw5-N6-Xys" secondAttribute="top" constant="50" id="oRQ-by-iq2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Da0-04-mBz" secondAttribute="trailing" constant="50" id="rLb-yf-YKs"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Bw5-N6-Xys" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8if-MK-42Q"/>
+                            <constraint firstItem="Bw5-N6-Xys" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EgH-9v-mHZ"/>
+                            <constraint firstItem="Bw5-N6-Xys" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XpF-OY-Ayo"/>
+                            <constraint firstAttribute="bottom" secondItem="Bw5-N6-Xys" secondAttribute="bottom" id="tHs-ki-7wf"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="sw" destination="8bC-Xf-vdC" id="0gw-EA-M7n"/>
+                        <outlet property="holder" destination="Bw5-N6-Xys" id="BPm-Dk-axm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -36,9 +57,4 @@
             <point key="canvasLocation" x="-23.188405797101453" y="39.508928571428569"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

@@ -10,6 +10,8 @@
 		088ABECF29B9EE3E4A5948B3 /* libPods-calculator2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F523FA4664A306F11722363B /* libPods-calculator2.a */; };
 		0C9123DAB58474D40AB0EC31 /* libPods-calculator2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DA6150D44747AEE832F62B /* libPods-calculator2Tests.a */; };
 		5CFA7A6D0522D88BA294D82F /* libPods-calculator2-calculator2UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5061654F8FA91EBF9CE0B2A0 /* libPods-calculator2-calculator2UITests.a */; };
+		9303332C26DBB5B500B1C2C7 /* MathOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303332B26DBB5B500B1C2C7 /* MathOperations.swift */; };
+		9303332F26DBB88500B1C2C7 /* MathOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9303332B26DBB5B500B1C2C7 /* MathOperations.swift */; };
 		939CABA426DA99D4006C0414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CABA326DA99D4006C0414 /* AppDelegate.swift */; };
 		939CABA626DA99D4006C0414 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CABA526DA99D4006C0414 /* SceneDelegate.swift */; };
 		939CABA826DA99D4006C0414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939CABA726DA99D4006C0414 /* ViewController.swift */; };
@@ -45,6 +47,7 @@
 		75CA8CE12FF6E4056FE1F019 /* Pods-calculator2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calculator2.release.xcconfig"; path = "Target Support Files/Pods-calculator2/Pods-calculator2.release.xcconfig"; sourceTree = "<group>"; };
 		77BA9559805E706E263F61B4 /* Pods-calculator2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calculator2.debug.xcconfig"; path = "Target Support Files/Pods-calculator2/Pods-calculator2.debug.xcconfig"; sourceTree = "<group>"; };
 		81AD38896BA2D896FCC7D15E /* Pods-calculator2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calculator2Tests.release.xcconfig"; path = "Target Support Files/Pods-calculator2Tests/Pods-calculator2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9303332B26DBB5B500B1C2C7 /* MathOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperations.swift; sourceTree = "<group>"; };
 		939CABA026DA99D4006C0414 /* calculator2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		939CABA326DA99D4006C0414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		939CABA526DA99D4006C0414 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +119,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9303332A26DBB59800B1C2C7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9303332B26DBB5B500B1C2C7 /* MathOperations.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		939CAB9726DA99D4006C0414 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +152,7 @@
 		939CABA226DA99D4006C0414 /* calculator2 */ = {
 			isa = PBXGroup;
 			children = (
+				9303332A26DBB59800B1C2C7 /* Controller */,
 				939CABD626DA9B40006C0414 /* View */,
 				939CABA326DA99D4006C0414 /* AppDelegate.swift */,
 				939CABA726DA99D4006C0414 /* ViewController.swift */,
@@ -419,6 +431,7 @@
 			files = (
 				939CABAE26DA99D4006C0414 /* calculator2.xcdatamodeld in Sources */,
 				939CABA826DA99D4006C0414 /* ViewController.swift in Sources */,
+				9303332C26DBB5B500B1C2C7 /* MathOperations.swift in Sources */,
 				939CABA426DA99D4006C0414 /* AppDelegate.swift in Sources */,
 				939CABA626DA99D4006C0414 /* SceneDelegate.swift in Sources */,
 			);
@@ -429,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				939CABBE26DA99D5006C0414 /* calculator2Tests.swift in Sources */,
+				9303332F26DBB88500B1C2C7 /* MathOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

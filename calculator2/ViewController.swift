@@ -10,7 +10,7 @@ import FINNBottomSheet
 
 class ViewController: UIViewController {
 
-    @IBOutlet var sw: UIView!
+    @IBOutlet var holder : UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,12 +19,25 @@ class ViewController: UIViewController {
        
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        setupNumberPad()
+    }
+    
+    func setupNumberPad() {
+        let buttonSize = view.frame.size.width / 4
+        
+    }
+    
     func showBottomSheet() {
         let transitioningDelegate = BottomSheetTransitioningDelegate(
             contentHeights: [.bottomSheetAutomatic, UIScreen.main.bounds.size.height - 200],
             startTargetIndex: 1
         )
+        
         let viewController = UIViewController()
+        
         viewController.transitioningDelegate = transitioningDelegate
         viewController.modalPresentationStyle = .custom
 
@@ -32,9 +45,9 @@ class ViewController: UIViewController {
         
         
     }
+    
     @IBAction func info(_ sender: Any) {
         showBottomSheet()
-        
     }
     
     func toastError(string:String){
