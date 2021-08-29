@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     func showBottomSheet() {
         let transitioningDelegate = BottomSheetTransitioningDelegate(
             contentHeights: [.bottomSheetAutomatic, UIScreen.main.bounds.size.height - 200],
-            startTargetIndex: 0
+            startTargetIndex: 1
         )
         let viewController = UIViewController()
         viewController.transitioningDelegate = transitioningDelegate
