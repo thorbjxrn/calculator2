@@ -20,6 +20,8 @@ Decide approach, (State vs String Parser) (UI first, Tests First)
  - Decided backend first: TestDriven + String Parser; more advanced app quicker. Grab a string and go! Demonstrate decoupling
 - Minimal Viable Product
 
+- (UI Test driven?)
+
 # Further Ideas
 
 Undo, Redo, Log
@@ -29,6 +31,8 @@ Calculus, graphing
 Finn Ads
 
 Better UI.
+
+UITests, Performance 
 
 User Centered Design Testing / Stakeholder Review
 

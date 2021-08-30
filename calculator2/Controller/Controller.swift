@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import MathExpression
 
 
 
@@ -17,26 +17,20 @@ class Controller {
     var string : String = ""
     
     static func calculate(mathString : String) -> Double? {
-        if(mathString.contains(Operation.multiply.rawValue)){
-            return 1
+        
+        do{
+            let expression = try MathExpression(mathString)
+            let value = expression.evaluate()
+            
+            return value
+            
         }
-        return nil
+        catch{
+            print("Parser error!")
+            return nil
+        }
+        
     }
     
-    func addition (first: Double, second: Double) -> Double {
-        return (first + second)
-    }
-    
-    func subtraction (first: Double, second: Double) -> Double {
-        return (first - second)
-    }
-    
-    func multiplication (first: Double, second: Double) -> Double {
-        return (first * second)
-    }
-    
-    func division (first: Double, second: Double) -> Double {
-        return (first / second)
-    }
     
 }

@@ -20,6 +20,15 @@ class calculator2Tests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
+    func testControllerMath() throws {
+        let problemString = "99.9 - 0.01 + 2/(2 + 2)"
+        
+        let answer = Controller.calculate(mathString: problemString)
+        
+        XCTAssertEqual(answer, 100.39)
+    }
+    
+    
     func testAdditionCalculation() throws {
         let expression = try MathExpression("5 + 2")
         let value = expression.evaluate()
