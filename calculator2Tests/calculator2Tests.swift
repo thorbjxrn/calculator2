@@ -12,8 +12,6 @@ import MathExpression
 
 class calculator2Tests: XCTestCase {
     
-    let mathOperator = Controller()
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -22,54 +20,55 @@ class calculator2Tests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    func testCalculation() throws {
-        //XCTAssertNil(Controller.calculate(mathString: "5*5"))
+    func testAdditionCalculation() throws {
+        let expression = try MathExpression("5 + 2")
+        let value = expression.evaluate()
+        
+        XCTAssertEqual(value, 7.0)
+        
+    }
+    
+    func testSubtractionCalculation() throws {
+        let expression = try MathExpression("5 - 2")
+        let value = expression.evaluate()
+        
+        XCTAssertEqual(value, 3.0)
+        
+    }
+    
+    func testMultiplicationCalculation() throws {
+        let expression = try MathExpression("5 * 2")
+        let value = expression.evaluate()
+        
+        XCTAssertEqual(value, 10.0)
+        
+    }
+    
+    func testDivisionCalculation() throws {
+        
+        let expression = try MathExpression("8 / 4 * 2")
+        let value = expression.evaluate()
+        
+        XCTAssertNotEqual(value, 1.0)
+        XCTAssertEqual(value, 4.0)
+        
+    }
+    
+    func testBracketCalculation() throws {
         
         let expression = try MathExpression("(3 + 4) * 9")
-        let value = expression.evaluate() // 63.0
+        let value = expression.evaluate()
         
         XCTAssertEqual(value, 63.0)
+    }
+    
+    func testNonBracketCalculation() throws {
         
-               
-    }
-    
-    
-    
-    func testAddition() throws {
-        let var1 = 2.22 , var2 = 2.22, answ = 4.44
+        let expression = try MathExpression("3 + 4 * 9")
+        let value = expression.evaluate()
         
-        XCTAssertEqual(mathOperator.addition(first: var1, second: var2), answ)
-    }
-    
-    func testSubtraction() throws {
-        let var1 = 2.22 , var2 = 2.22, answ = 0.00
+        XCTAssertNotEqual(value, 63.0)
+        XCTAssertEqual(value, 39.0)
         
-        XCTAssertEqual(mathOperator.subtraction(first: var1, second: var2), answ)
     }
-    
-    func testMultiplication() throws {
-        let var1 = 2.22 , var2 = 2.22, answ = 4.9284
-        
-        XCTAssertEqual(mathOperator.multiplication(first: var1, second: var2), answ)
-    }
-    
-    func testDivision() throws {
-        let var1 = 2.22 , var2 = 2.22, answ = 1.0
-        
-        XCTAssertEqual(mathOperator.division(first: var1, second: var2), answ)
-    }
-
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
