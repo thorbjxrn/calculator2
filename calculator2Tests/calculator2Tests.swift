@@ -6,6 +6,8 @@
 //
 
 import XCTest
+import MathExpression
+
 @testable import calculator2
 
 class calculator2Tests: XCTestCase {
@@ -21,7 +23,13 @@ class calculator2Tests: XCTestCase {
     }
     
     func testCalculation() throws {
-        XCTAssertNil(Controller.calculate(mathString: "5*5"))
+        //XCTAssertNil(Controller.calculate(mathString: "5*5"))
+        
+        let expression = try MathExpression("(3 + 4) * 9")
+        let value = expression.evaluate() // 63.0
+        
+        XCTAssertEqual(value, 63.0)
+        
                
     }
     
