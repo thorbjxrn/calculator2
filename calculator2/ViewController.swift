@@ -14,9 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet var textInput: UITextField!
     
     @IBAction func calculateAction(){
-        print(Controller.calculate(mathString:textInput.text!) ?? "mathematical!")
+        //print(Controller.calculate(mathString:textInput.text) ?? "mathematical!")
+    
+        let mathString = textInput.text
+        
+        var result = Controller.calculate(mathString: mathString)
         
         textInput.backgroundColor = UIColor.green
+    
+        textInput.text = String(format: "%.1f", result!)
     }
   
     override func viewDidLoad() {

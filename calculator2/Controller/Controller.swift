@@ -13,17 +13,18 @@ import MathExpression
 
 class Controller {
     
-    static func calculate(mathString : String) -> Double? {
+    static func calculate(mathString : String?) -> Double? {
         
         do{
-            let expression = try MathExpression(mathString)
+            let expression = try MathExpression(mathString!)
             let value = expression.evaluate()
             
             return value
             
         }
         catch{
-            print("Parser error!")
+            print("Parser or Input error!")
+            
             return nil
         }
         
