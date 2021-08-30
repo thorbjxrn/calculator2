@@ -17,8 +17,23 @@ MVC
 Startup time
 
 Decide approach, (State vs String Parser) (UI first, Tests First)
+ - Decided backend first: TestDriven + String Parser; more advanced app quicker. Grab a string and go! Demonstrate decoupling
 
-Resources:
+
+# Further Ideas
+
+Undo, Redo
+
+Better UI.
+
+User Centered Design Testing. 
+
+Apple Watch
+
+
+
+
+# Resources:
 
 Parser:
 https://academy.realm.io/posts/tryswift-yasuhiro-inami-parser-combinator/
