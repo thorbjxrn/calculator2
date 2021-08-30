@@ -24,6 +24,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="calculate" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Uen-EM-KMv"/>
+                                            <action selector="reset" destination="BYZ-38-t0r" eventType="touchUpInside" id="JHF-cp-G9E"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Da0-04-mBz">
                                         <rect key="frame" x="344" y="50" width="20" height="20"/>
@@ -50,6 +54,7 @@
                     </view>
                     <connections>
                         <outlet property="holder" destination="Bw5-N6-Xys" id="BPm-Dk-axm"/>
+                        <outlet property="textInput" destination="P0g-Fp-Y2T" id="Ss7-lw-Qpa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

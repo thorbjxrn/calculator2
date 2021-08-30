@@ -11,7 +11,14 @@ import FINNBottomSheet
 class ViewController: UIViewController {
 
     @IBOutlet var holder : UIView!
+    @IBOutlet var textInput: UITextField!
     
+    @IBAction func calculateAction(){
+        print(Controller.calculate(mathString:textInput.text!) ?? "mathematical!")
+        
+        textInput.backgroundColor = UIColor.green
+    }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
