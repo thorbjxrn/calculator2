@@ -12,9 +12,6 @@ import MathExpression
 
 
 class Controller {
-    var operation : Operation = .unknown
-     
-    var string : String = ""
     
     static func calculate(mathString : String) -> Double? {
         
