@@ -23,7 +23,7 @@ class calculator2Tests: XCTestCase {
     func testControllerMath() throws {
         let problemString = "99.9 - 0.01 + 2/(2 + 2)"
         
-        let answer = Controller.calculate(mathString: problemString)
+        let answer = try Controller.calculate(mathString: problemString)
         
         XCTAssertEqual(answer, 100.39)
     }
