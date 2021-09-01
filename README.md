@@ -5,8 +5,9 @@ todo:
 
 - parser *DONE*
 - further math functions *DONE*
-- UI
-- State reset
+- UI v 2
+- State reset 2
+- Documentation
 
 # Description
 
@@ -46,12 +47,13 @@ UIInputViewController / not (seems like a global thing)
 
 # Resources:
 
-Parser:
+**Parser:**
 https://github.com/peredaniel/MathExpression
 
-BottomSheet:
+**BottomSheet:**
 https://github.com/finn-no/BottomSheet
 
-UI Inspo (SwiftUI)
-https://iosexample.com/calculator-app-created-using-the-swiftui-framework/
-
+**UI Guide & inspo**
+*Calculator App Example Swift Xcode Tutorial*
+Code With Cal
+https://www.youtube.com/watch?v=A2gGNTKo_q8
