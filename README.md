@@ -32,7 +32,7 @@ Calculus, graphing
 
 Finn Ads
 
-Better UI.
+Better UI, Swift UI
 
 UITests, Performance 
 
