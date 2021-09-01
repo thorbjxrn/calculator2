@@ -40,6 +40,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		93C4946126DF8110002C0196 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		05AAF991A70B227E4BBB6C72 /* Pods_calculator2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calculator2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E031FED44E0ECCFC3E202E3 /* Pods_calculator2_calculator2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calculator2_calculator2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,11 +168,8 @@
 				9303332A26DBB59800B1C2C7 /* Controller */,
 				939CABD626DA9B40006C0414 /* View */,
 				939CABA326DA99D4006C0414 /* AppDelegate.swift */,
-				939CABA726DA99D4006C0414 /* ViewController.swift */,
 				939CABA526DA99D4006C0414 /* SceneDelegate.swift */,
-				939CABA926DA99D4006C0414 /* Main.storyboard */,
 				939CABAF26DA99D5006C0414 /* Assets.xcassets */,
-				939CABB126DA99D5006C0414 /* LaunchScreen.storyboard */,
 				939CABB426DA99D5006C0414 /* Info.plist */,
 				939CABAC26DA99D4006C0414 /* calculator2.xcdatamodeld */,
 			);
@@ -187,6 +197,9 @@
 		939CABD626DA9B40006C0414 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				939CABB126DA99D5006C0414 /* LaunchScreen.storyboard */,
+				939CABA926DA99D4006C0414 /* Main.storyboard */,
+				939CABA726DA99D4006C0414 /* ViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +216,7 @@
 				939CAB9D26DA99D4006C0414 /* Frameworks */,
 				939CAB9E26DA99D4006C0414 /* Resources */,
 				DC5643E88DE00B9328FEC03F /* [CP] Embed Pods Frameworks */,
+				93C4946126DF8110002C0196 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);

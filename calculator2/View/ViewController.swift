@@ -13,13 +13,120 @@ class ViewController: UIViewController {
     @IBOutlet var holder : UIView!
     @IBOutlet var textInput: UITextField!
   
-    
+    //DTO
+    var mathString:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        
+        reset()
+    }
+    
+    //
+    // Functionality functions
+    
+    func reset(){
+        mathString = ""
+        textInput.text = mathString
+    }
+    
+    
+    // Insert a character
+    func insertChar(value: String){
+        mathString += value
+        textInput.text = mathString
+    }
+    
+    //********************
+    // Keyboard Button Handlers
+    
+    @IBAction func backspace(_ sender: Any) {
+        if(!mathString.isEmpty){
+            mathString.removeLast()
+            textInput.text = mathString
+        }
+    }
+    
+    @IBAction func dot(_ sender: Any) {
+        insertChar(value: ".")
+    }
+    
+    @IBAction func plus(_ sender: Any) {
+        insertChar(value: "+")
+    }
+    
+    @IBAction func minus(_ sender: Any) {
+        insertChar(value: "-")
+    }
+    
+    @IBAction func allClear(_ sender: Any) {
+        reset()
+    }
+    
+    @IBAction func zero(_ sender: Any) {
+        insertChar(value: "0")
+    }
+    
+    @IBAction func openBracket(_ sender: Any) {
+        insertChar(value: "(")
+    }
+    
+    @IBAction func closeBracket(_ sender: Any) {
+        insertChar(value: ")")
+    }
+    
+    @IBAction func multiplication(_ sender: Any) {
+        insertChar(value: "*")
+    }
+    
+    @IBAction func one(_ sender: Any) {
+        insertChar(value: "1")
+    }
+    
+    @IBAction func two(_ sender: Any) {
+        insertChar(value: "2")
+    }
+    
+    @IBAction func three(_ sender: Any) {
+        insertChar(value: "3")
+    }
+    
+    @IBAction func divide(_ sender: Any) {
+        insertChar(value: "/")
+    }
+    
+    @IBAction func four(_ sender: Any) {
+        insertChar(value: "4")
+    }
+    
+    @IBAction func five(_ sender: Any) {
+        insertChar(value: "5")
+    }
+    
+    @IBAction func six(_ sender: Any) {
+        insertChar(value: "6")
+    }
+    
+    @IBAction func equals(_ sender: Any) {
+        calculateAction()
+    }
+    
+    @IBAction func seven(_ sender: Any) {
+        insertChar(value: "7")
+    }
+    @IBAction func eigth(_ sender: Any) {
+        insertChar(value: "8")
+    }
+    
+    @IBAction func nine(_ sender: Any) {
+        insertChar(value: "9")
+    }
+    //********************
+    
+    //
+    // Enables iOS native keyboard
+    func enableNativeKeyboard(){
+        textInput.isEnabled = true
         textInput.becomeFirstResponder()
     }
     
@@ -31,10 +138,10 @@ class ViewController: UIViewController {
     
     //
     // Perform calculation and show result
-    @IBAction func calculateAction(){
+    func calculateAction(){
     
         do{
-            let result = try Controller.calculate(mathString: textInput.text)
+            let result = try Controller.calculate(mathString: mathString)
     
             textInput.text = String(Double(result!))
             
@@ -49,7 +156,7 @@ class ViewController: UIViewController {
             print(e)
         }
     }
-    
+
     //
     // Create and show a info-card based on Finn.no BottomSheet
     func showBottomSheet() {

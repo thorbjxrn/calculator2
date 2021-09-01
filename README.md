@@ -4,9 +4,10 @@
 todo:
 
 - parser *DONE*
-- further math functions
-- UI
-- State reset
+- further math functions *DONE*
+- UI v 2
+- State reset 2
+- Documentation
 
 # Description
 
@@ -16,11 +17,13 @@ MVC
 
 Startup time
 
-Decide approach, (State vs String Parser) (UI first, Tests First)
+Decide approach, (State vs String Parser (vs UCD)) (UI first, Tests First)
  - Decided backend first: TestDriven + String Parser; more advanced app quicker. Grab a string and go! Demonstrate decoupling
 - Minimal Viable Product
 
 - (UI Test driven?)
+	
+- UIInputViewController vs buttons vs native keyboard
 
 # Further Ideas
 
@@ -32,7 +35,7 @@ Calculus, graphing
 
 Finn Ads
 
-Better UI.
+Better UI, Swift UI
 
 UITests, Performance 
 
@@ -40,17 +43,19 @@ User Centered Design Testing / Stakeholder Review
 
 Apple Watch
 
+UIInputViewController / not (seems like a global thing)
 
 
 
 # Resources:
 
-Parser:
+**Parser:**
 https://github.com/peredaniel/MathExpression
 
-BottomSheet:
+**BottomSheet:**
 https://github.com/finn-no/BottomSheet
 
-UI Inspo (SwiftUI)
-https://iosexample.com/calculator-app-created-using-the-swiftui-framework/
-
+**UI Guide & inspo**
+*Calculator App Example Swift Xcode Tutorial*
+Code With Cal
+https://www.youtube.com/watch?v=A2gGNTKo_q8
