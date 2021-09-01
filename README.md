@@ -4,7 +4,7 @@
 todo:
 
 - parser *DONE*
-- further math functions
+- further math functions *DONE*
 - UI
 - State reset
 
@@ -16,11 +16,13 @@ MVC
 
 Startup time
 
-Decide approach, (State vs String Parser) (UI first, Tests First)
+Decide approach, (State vs String Parser (vs UCD)) (UI first, Tests First)
  - Decided backend first: TestDriven + String Parser; more advanced app quicker. Grab a string and go! Demonstrate decoupling
 - Minimal Viable Product
 
 - (UI Test driven?)
+	
+- UIInputViewController vs buttons vs native keyboard
 
 # Further Ideas
 
@@ -38,6 +40,7 @@ User Centered Design Testing / Stakeholder Review
 
 Apple Watch
 
+UIInputViewController / not (seems like a global thing)
 
 
 

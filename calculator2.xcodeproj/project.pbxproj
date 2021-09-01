@@ -40,6 +40,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		93C4946126DF8110002C0196 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		05AAF991A70B227E4BBB6C72 /* Pods_calculator2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calculator2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E031FED44E0ECCFC3E202E3 /* Pods_calculator2_calculator2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calculator2_calculator2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +216,7 @@
 				939CAB9D26DA99D4006C0414 /* Frameworks */,
 				939CAB9E26DA99D4006C0414 /* Resources */,
 				DC5643E88DE00B9328FEC03F /* [CP] Embed Pods Frameworks */,
+				93C4946126DF8110002C0196 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);

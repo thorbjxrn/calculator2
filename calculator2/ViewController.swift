@@ -20,6 +20,12 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
+    }
+    
+    //
+    // Enables iOS native keyboard
+    func enableNativeKeyboard(){
+        textInput.isEnabled = true
         textInput.becomeFirstResponder()
     }
     
@@ -49,7 +55,7 @@ class ViewController: UIViewController {
             print(e)
         }
     }
-    
+
     //
     // Create and show a info-card based on Finn.no BottomSheet
     func showBottomSheet() {
