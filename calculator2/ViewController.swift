@@ -13,12 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet var holder : UIView!
     @IBOutlet var textInput: UITextField!
   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        
         textInput.becomeFirstResponder()
-       
     }
     
     //

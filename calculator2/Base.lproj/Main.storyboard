@@ -18,13 +18,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-N6-Xys">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="bezel" placeholder="MATH" textAlignment="right" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="25" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="P0g-Fp-Y2T">
+                                    <textField opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" borderStyle="bezel" placeholder="MATH" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="30" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="P0g-Fp-Y2T">
                                         <rect key="frame" x="45" y="130" width="324" height="200"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="d5j-ay-4xm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
                                             <action selector="calculateAction" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Hd9-gP-p9Y"/>
