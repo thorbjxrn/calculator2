@@ -24,6 +24,8 @@ Decide approach, (State vs String Parser) (UI first, Tests First)
 
 # Further Ideas
 
+Float number issue (0.00000000001)
+
 Undo, Redo, Log
 
 Calculus, graphing
