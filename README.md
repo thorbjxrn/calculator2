@@ -5,8 +5,8 @@ todo:
 
 - parser *DONE*
 - further math functions *DONE*
-- UI v 2
-- State reset 2
+- UI v 2 *DONE*
+- State reset 2 *DONE*
 - Documentation
 
 # Description
@@ -27,7 +27,13 @@ Decide approach, (State vs String Parser (vs UCD)) (UI first, Tests First)
 
 # Further Ideas
 
+Filter away first decimal point
+
 Float number issue (0.00000000001)
+
+validate input further
+
+2(3-1)
 
 Undo, Redo, Log
 
@@ -35,7 +41,7 @@ Calculus, graphing
 
 Finn Ads
 
-Better UI, Swift UI
+Better UI, Swift UI?
 
 UITests, Performance 
 
