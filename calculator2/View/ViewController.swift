@@ -23,15 +23,16 @@ class ViewController: UIViewController {
     }
     
     //
-    // Functionality functions
+    // reset the state
     
     func reset(){
         mathString = ""
         textInput.text = mathString
     }
     
+    //
+    // update the screen
     
-    // Insert a character
     func insertChar(value: String){
         mathString += value
         textInput.text = mathString
@@ -122,13 +123,6 @@ class ViewController: UIViewController {
         insertChar(value: "9")
     }
     //********************
-    
-    //
-    // Enables iOS native keyboard
-    func enableNativeKeyboard(){
-        textInput.isEnabled = true
-        textInput.becomeFirstResponder()
-    }
     
     //
     // Info button action
